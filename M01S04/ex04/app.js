@@ -48,7 +48,7 @@ for (var i = 1; i <= 89; i++) {
 
 //Modifica exemplul astfel incat bucla sa numere de la 1 la 88.
 
-for (var i = 1; i <= 88; i++) {
+for (var i = 1; i < 89; i++) {
   console.log(i);
 }
 
