@@ -1,0 +1,171 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: url(./images/erol-ahmed-IHL-Jbawvvo-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font-family: 'Mouse Memoirs', sans-serif;
+}
+
+.custom-container {
+  display: flex;
+  align-self: center;
+}
+.custom-container button {
+  margin: 0 15px;
+}
+
+.frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 40px;
+  height: 150px;
+}
+
+p {
+  background: linear-gradient(#2ebb9b, #5c9103, #9f9e17);
+    -webkit-background-clip: text;
+            background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 34px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.spacing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+  padding: 4px 8px;
+  border: 1px transparent;
+  border-radius: 30%;
+}
+
+.clock li:nth-child(odd) {
+  width: 66px;
+  height: 66px;
+  box-shadow: 3px 3px darkgreen, -2px -2px darkgoldenrod;
+}
+
+.clock li:nth-child(even) {
+  border: none;
+  box-shadow: 0;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: darkgoldenrod;
+  border: none;
+  background: transparent;
+}
+
+.watch-button {
+    font-size: 36px;
+}
+
+
+.stopwatch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.stopwatch-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 42px;
+  margin-bottom: 30px;
+}
+
+.stopwatch-button {
+  font-size: 42px;
+}
+
+.stopwatch-pause, .stopwatch-reset{
+  font-size: 36px;
+}
+.stopwatch ul{
+  text-align: center;
+
+  background: linear-gradient(to right, #FF0 20%, #df5c2d 40%, #FF0 60%, #e29a1b 80%);
+  background-size: 200% auto;
+
+  color: #000;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shine 3s linear infinite;
+  border-radius: 30px;
+  padding: 0px 10px;
+}
+
+.stopwatch li {
+  margin: 0;
+}
+
+.stopwatch li:nth-of-type(odd) {
+  width: 46px;
+}
+
+.stopwatch li:nth-of-type(even) {
+  padding: 0;
+}
+
+.switch-buttons {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+
+.picture {
+  position: absolute;
+  right: 4%;
+  bottom: 4%;
+  color: #fff;
+}
+
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}

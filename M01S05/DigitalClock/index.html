@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Digital Clock</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+    crossorigin="anonymous"
+  >
+  <link
+    rel="stylesheet"
+    href="style.css"
+  >
+
+  <link
+    rel="preconnect"
+    href="https://fonts.googleapis.com"
+  >
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  >
+  <link
+    href="https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap"
+    rel="stylesheet"
+  >
+
+</head>
+
+<body>
+  <div class="custom-container flex-column">
+    <p id="dateParagraph">Sunday 23 February 2022</p>
+    <div class="frame">
+      <div
+        class="clock"
+        id="clock"
+      >
+        <ul>
+          <li
+            class="spacing"
+            id="hour"
+          >09</li>
+          <li class="spacing"> : </li>
+          <li
+            class="spacing"
+            id="minutes"
+          >15</li>
+          <li class="spacing"> : </li>
+          <li
+            class="spacing"
+            id="seconds"
+          >56</li>
+        </ul>
+      </div>
+      <div
+        class="stopwatch"
+        id="stopwatch"
+      >
+        <ul>
+          <li
+            class="hour spacing"
+            id="stopwatch-hour"
+          >00</li>
+          <li class="spacing">:</li>
+          <li
+            class="minutes spacing"
+            id="stopwatch-minutes"
+          >00</li>
+          <li class="spacing">:</li>
+          <li
+            class="seconds spacing"
+            id="stopwatch-seconds"
+          >00</li>
+          <li class="spacing">:</li>
+          <li
+            class="miliseconds spacing"
+            id="stopwatch-miliseconds"
+          >00</li>
+        </ul>
+        <div class="stopwatch-buttons">
+          <button
+            class="stopwatch-button"
+            id="start"
+          ><i
+              class="fa-solid fa-stopwatch"
+              title="Start Stopwatch"
+            ></i></button>
+          <button
+            class="stopwatch-pause"
+            id="stop"
+          ><i
+              class="fa-solid fa-circle-pause"
+              title="Stop Stopwatch"
+            ></i></button>
+          <button
+            class="stopwatch-reset"
+            id="reset"
+          ><i
+              class="fa-solid fa-circle-xmark"
+              title="Reset Stopwatch"
+            ></i></button>
+        </div>
+
+      </div>
+    </div>
+    <div class="switch-buttons">
+      <button
+        class="watch-button"
+        id="switch-to-clock"
+      >
+        <i
+          class="fa-solid fa-clock"
+          title="Switch to clock"
+        >
+        </i>
+      </button>
+      <button
+        class="watch-button stopwatch-button"
+        id="switch-to-stopwatch"
+      >
+        <i
+          class="fa-solid fa-stopwatch"
+          title="Switch to stopwatch"
+        >
+        </i>
+      </button>
+    </div>
+  </div>
+
+  <footer class="picture">
+    Photo by <a
+      href="https://unsplash.com/@erol?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Erol
+      Ahmed</a> on <a
+      href="https://unsplash.com/s/photos/clock-frame?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+    >Unsplash</a>
+  </footer>
+
+  <script
+    src="https://kit.fontawesome.com/b91f1050a2.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="clock.js"></script>
+  <script src="stopwatch.js"></script>
+</body>
+
+</html>
