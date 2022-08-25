@@ -39,7 +39,7 @@ const pet = {
     return 'Tweety';
   },
   getSpecies: function () {
-    return 'flyinh reptile';
+    return 'flying reptile';
   },
   getAge: function () {
     return 45;
